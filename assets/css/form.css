@@ -1,0 +1,647 @@
+.complaint-page {
+  background: #f4f7f9;
+}
+.form-account {
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 0 18px;
+  border: 2px solid var(--public-blue);
+  border-radius: 10px;
+  color: var(--public-blue);
+  font-size: 16px;
+  font-weight: bold;
+}
+.form-account svg {
+  width: 25px;
+}
+.form-container {
+  width: min(1080px, calc(100% - 48px));
+  margin: auto;
+}
+.form-intro {
+  background: #fff;
+  padding: 46px 0;
+}
+.form-intro > .form-container {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  gap: 22px;
+}
+.back-link {
+  align-self: start;
+  margin-top: 9px;
+  color: var(--public-blue);
+  font-weight: bold;
+  font-size: 16px;
+}
+.intro-icon {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #e5f1f7;
+  color: var(--public-blue);
+}
+.intro-icon svg {
+  width: 39px;
+}
+.form-kicker {
+  margin: 0 0 5px;
+  color: var(--public-blue);
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+}
+.form-intro h1 {
+  margin: 0;
+  color: var(--public-blue-dark);
+  font:
+    bold 42px/1.15 Arial,
+    sans-serif;
+  letter-spacing: -0.02em;
+}
+.form-intro div > p:last-child {
+  margin: 8px 0 0;
+  color: var(--subtext);
+  font-size: 18px;
+}
+.form-progress {
+  background: #fff;
+  border-top: 1px solid #e2e8eb;
+  border-bottom: 1px solid #d6e0e5;
+}
+.form-progress > .form-container {
+  height: 88px;
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr auto;
+  align-items: center;
+  gap: 18px;
+  max-width: 760px;
+}
+.progress-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #718491;
+}
+.progress-item span {
+  width: 42px;
+  height: 42px;
+  border: 2px solid #aebcc5;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+  background: #fff;
+}
+.progress-item strong {
+  font-size: 16px;
+}
+.progress-item.active {
+  color: var(--public-blue);
+}
+.progress-item.active span {
+  background: var(--public-blue);
+  border-color: var(--public-blue);
+  color: #fff;
+}
+.form-progress i {
+  height: 2px;
+  background: #cbd7dd;
+}
+.form-area {
+  padding: 54px 0 80px;
+}
+.form-layout-new {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+.form-help-card {
+  position: sticky;
+  top: 24px;
+  padding: 28px;
+  background: #fff;
+  border: 2px solid #cbdbe4;
+  border-radius: 16px;
+  text-align: center;
+}
+.form-help-card > span {
+  width: 66px;
+  height: 66px;
+  margin: auto;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #e8f2f8;
+  color: var(--public-blue);
+}
+.form-help-card > span svg {
+  width: 36px;
+}
+.form-help-card h2 {
+  font:
+    bold 25px/1.2 Arial,
+    sans-serif;
+  margin: 16px 0 8px;
+}
+.form-help-card > p {
+  margin: 0;
+  color: var(--subtext);
+  font-size: 16px;
+}
+.form-help-card > a {
+  display: block;
+  margin-top: 20px;
+  padding: 13px;
+  border: 2px solid var(--public-blue);
+  border-radius: 10px;
+  color: var(--public-blue);
+}
+.form-help-card > a small,
+.form-help-card > a strong {
+  display: block;
+}
+.form-help-card > a small {
+  font-size: 13px;
+}
+.form-help-card > a strong {
+  font-size: 19px;
+}
+.safe-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  border-top: 1px solid #d9e2e7;
+  margin-top: 24px;
+  padding-top: 22px;
+}
+.safe-note svg {
+  width: 30px;
+  flex: 0 0 auto;
+  color: #237a46;
+}
+.safe-note strong,
+.safe-note small {
+  display: block;
+}
+.safe-note strong {
+  font-size: 15px;
+}
+.safe-note small {
+  font-size: 13px;
+  color: var(--subtext);
+}
+.friendly-form {
+  background: #fff;
+  border: 2px solid #cbdbe4;
+  border-radius: 18px;
+  overflow: hidden;
+}
+.form-error {
+  padding: 20px 32px;
+  background: #fff0f1;
+  color: #8f1e2a;
+  border-bottom: 2px solid #e3abb2;
+}
+.form-error strong {
+  font-size: 18px;
+}
+.form-error p {
+  margin: 3px 0 0;
+  font-size: 16px;
+}
+.friendly-section {
+  border: 0;
+  margin: 0;
+  padding: 38px 42px 15px;
+}
+.friendly-section.section-blue {
+  border-top: 2px solid #d6e3ea;
+  background: #f4f9fc;
+  padding-bottom: 22px;
+}
+.friendly-section legend {
+  float: left;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 32px;
+  padding: 0;
+}
+.friendly-section legend + * {
+  clear: both;
+}
+.friendly-section legend > span,
+.send-heading > span {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--public-blue);
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+.friendly-section legend strong,
+.friendly-section legend small {
+  display: block;
+}
+.friendly-section legend strong {
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--public-blue-dark);
+}
+.friendly-section legend small {
+  font-size: 16px;
+  color: var(--subtext);
+  margin-top: 3px;
+}
+.friendly-field {
+  margin-bottom: 30px;
+}
+.friendly-field label {
+  display: block;
+  font-size: 19px;
+  font-weight: bold;
+  color: #203b4c;
+  margin-bottom: 7px;
+}
+.friendly-field label b,
+.friendly-consent b {
+  color: #b42332;
+}
+.friendly-field label em {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  background: #e7edf0;
+  color: #506675;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: normal;
+}
+.field-hint {
+  margin: 0 0 10px;
+  color: var(--subtext);
+  font-size: 15px;
+}
+.friendly-field input,
+.friendly-field select,
+.friendly-field textarea {
+  width: 100%;
+  min-height: 58px;
+  border: 2px solid #9eafb9;
+  border-radius: 10px;
+  background: #fff;
+  padding: 13px 16px;
+  color: #172b3a;
+  font:
+    18px/1.5 Arial,
+    sans-serif;
+}
+.friendly-field textarea {
+  resize: vertical;
+}
+.friendly-field input::placeholder,
+.friendly-field textarea::placeholder {
+  color: #728591;
+  opacity: 1;
+}
+.friendly-field input:focus,
+.friendly-field select:focus,
+.friendly-field textarea:focus {
+  outline: 3px solid #79b9df;
+  outline-offset: 1px;
+  border-color: var(--public-blue);
+}
+.two-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.location-button {
+  min-height: 52px;
+  margin-bottom: 12px;
+  padding: 0 18px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  border: 2px solid var(--public-blue);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--public-blue);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.location-button svg {
+  width: 24px;
+}
+.complaint-map {
+  width: 100%;
+  height: 340px;
+  border: 2px solid #9eafb9;
+  border-radius: 12px;
+  background: #e7edf0;
+}
+.map-message {
+  margin: 8px 0 0;
+  color: var(--subtext);
+  font-size: 15px;
+}
+.friendly-upload {
+  min-height: 116px !important;
+  border: 2px dashed #7696a9 !important;
+  border-radius: 12px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  background: #fff;
+  cursor: pointer;
+}
+.friendly-upload > span {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #e7f2f8;
+  color: var(--public-blue);
+}
+.friendly-upload svg {
+  width: 29px;
+}
+.friendly-upload strong,
+.friendly-upload small {
+  display: block;
+}
+.friendly-upload strong {
+  font-size: 19px;
+  color: var(--public-blue);
+}
+.friendly-upload small {
+  font-size: 14px;
+  color: var(--subtext);
+  margin-top: 3px;
+}
+.file-input {
+  position: absolute;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0;
+}
+.send-section {
+  padding: 36px 42px 42px;
+  border-top: 2px solid #d6e0e5;
+}
+.send-heading {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.send-heading h2 {
+  font:
+    bold 26px/1.2 Arial,
+    sans-serif;
+  margin: 0;
+  color: var(--public-blue-dark);
+}
+.send-heading p {
+  margin: 3px 0 0;
+  color: var(--subtext);
+  font-size: 16px;
+}
+.friendly-consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin: 28px 0;
+  padding: 19px;
+  border: 2px solid #bdcbd3;
+  border-radius: 10px;
+  background: #f8fafb;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.friendly-consent input {
+  width: 25px;
+  height: 25px;
+  flex: 0 0 auto;
+  margin: 1px 0;
+  accent-color: var(--public-blue);
+}
+.send-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 26px;
+}
+.send-actions > a {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  color: var(--public-blue);
+  font-weight: bold;
+}
+.send-actions button {
+  min-height: 76px;
+  min-width: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--action);
+  color: #fff;
+  cursor: pointer;
+}
+.send-actions button:hover {
+  background: var(--action-dark);
+}
+.send-actions button svg {
+  width: 30px;
+}
+.send-actions button strong,
+.send-actions button small {
+  display: block;
+  text-align: left;
+}
+.send-actions button strong {
+  font-size: 21px;
+}
+.send-actions button small {
+  font-size: 13px;
+  margin-top: 2px;
+}
+.complaint-page .simple-public-footer > .public-container {
+  grid-template-columns: 1fr auto;
+}
+.complaint-page .simple-public-footer p {
+  grid-column: auto;
+  border: 0;
+  padding: 0;
+}
+@media (max-width: 850px) {
+  .form-layout-new {
+    grid-template-columns: 1fr;
+  }
+  .form-help-card {
+    position: static;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    text-align: left;
+    align-items: center;
+    gap: 15px;
+  }
+  .form-help-card > span {
+    width: 56px;
+    height: 56px;
+  }
+  .form-help-card h2 {
+    margin: 0;
+  }
+  .form-help-card > p {
+    grid-column: 2;
+  }
+  .form-help-card > a {
+    grid-row: 1/3;
+    grid-column: 3;
+    margin: 0;
+  }
+  .safe-note {
+    display: none;
+  }
+}
+@media (max-width: 640px) {
+  .form-container {
+    width: calc(100% - 28px);
+  }
+  .form-account {
+    font-size: 0;
+    padding-inline: 13px;
+  }
+  .form-account svg {
+    width: 28px;
+  }
+  .form-intro {
+    padding: 34px 0;
+  }
+  .form-intro > .form-container {
+    grid-template-columns: auto 1fr;
+    gap: 14px;
+  }
+  .back-link {
+    grid-column: 1/-1;
+    margin: 0 0 5px;
+  }
+  .intro-icon {
+    width: 60px;
+    height: 60px;
+  }
+  .intro-icon svg {
+    width: 31px;
+  }
+  .form-intro h1 {
+    font-size: 31px;
+  }
+  .form-intro div > p:last-child {
+    font-size: 16px;
+  }
+  .form-progress > .form-container {
+    height: 78px;
+    gap: 7px;
+  }
+  .progress-item {
+    display: block;
+    text-align: center;
+  }
+  .progress-item span {
+    width: 38px;
+    height: 38px;
+    margin: auto;
+  }
+  .progress-item strong {
+    font-size: 13px;
+  }
+  .form-area {
+    padding: 28px 0 55px;
+  }
+  .form-help-card {
+    display: block;
+    text-align: center;
+  }
+  .form-help-card > p {
+    margin-bottom: 15px;
+  }
+  .form-help-card > a {
+    margin-top: 12px;
+  }
+  .friendly-section,
+  .send-section {
+    padding: 30px 19px 10px;
+  }
+  .friendly-section.section-blue {
+    padding-bottom: 10px;
+  }
+  .friendly-section legend {
+    margin-bottom: 26px;
+  }
+  .friendly-section legend > span,
+  .send-heading > span {
+    width: 46px;
+    height: 46px;
+    font-size: 19px;
+  }
+  .friendly-section legend strong {
+    font-size: 23px;
+  }
+  .friendly-field label {
+    font-size: 18px;
+  }
+  .friendly-field input,
+  .friendly-field select,
+  .friendly-field textarea {
+    font-size: 18px;
+  }
+  .two-fields {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .friendly-upload {
+    padding: 18px;
+    justify-content: flex-start;
+  }
+  .send-section {
+    padding-bottom: 28px;
+  }
+  .send-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .send-actions button {
+    grid-row: 1;
+    min-width: 0;
+    width: 100%;
+  }
+  .send-actions > a {
+    justify-content: center;
+  }
+  .complaint-page .simple-public-footer > .public-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
